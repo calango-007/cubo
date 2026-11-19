@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demonstração</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Realidade Aumentada</h1>
+
+        <p>
+            Demonstração de um objeto virtual 3D
+            sobre a imagem da câmera.
+        </p>
+
+        <div class="area-visualizacao">
+
+        
+            <video id="camera" autoplay playsinline></video>
+
+          
+            <div id="cenario">
+                Câmera desligada
+            </div>
+
+          
+            <div class="cubo-container">
+                <div class="cubo" id="cubo">
+
+                    <div class="face frente">RA</div>
+                    <div class="face tras">3D</div>
+                    <div class="face direita">+</div>
+                    <div class="face esquerda">AR</div>
+                    <div class="face cima">VR</div>
+                    <div class="face baixo">★</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="controles">
+
+            <button id="botaoCamera">
+                Ativar câmera
+            </button>
+
+            <button id="botaoAnimacao">
+                Pausar animação
+            </button>
+
+            <label>
+                Tamanho:
+                <input type="range" id="tamanho"
+                       min="50" max="150" value="100">
+            </label>
+
+        </div>
+
+        <p id="status">
+            Câmera desligada.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
