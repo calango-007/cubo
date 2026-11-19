@@ -60,12 +60,10 @@ botaoCamera.addEventListener("click", async function () {
 
     } catch (erro) {
 
-        status.textContent =
-            "Não foi possível acessar a câmera. Verifique as permissões.";
+    status.textContent = "Erro: " + erro.name + " - " + erro.message;
+    console.error("Erro da câmera:", erro.name, erro.message);
+}
 
-        console.error(erro);
-
-    }
 
 });
 
